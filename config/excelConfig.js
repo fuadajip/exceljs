@@ -1,4 +1,4 @@
-var Excel = require('exceljs');
+var Excel = require('exceljs');;
 
 // create new Workbook
 var workbook = new Excel.Workbook();
@@ -30,9 +30,6 @@ var rows = [
 // wirte rows data to worksheet
 worksheet.addRows(rows);
 
-var reportExcel = workbook.xlsx.writeFile('./exportFile/test.xlsx').then(() => {
-    console.log("XLSX Exported");
-});
 
 
-module.exports = reportExcel;
+module.exports = workbook;

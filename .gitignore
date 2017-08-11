@@ -1,3 +1,6 @@
+# ignore exported files
+exportFile/*
+
 # Logs
 logs
 *.log
